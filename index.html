@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>My Titanic Data blog</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div  id="wrapper" class="divided" style="z-index: 0;">
+			
+				<!-- One -->
+					<div style="z-index: 1;" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					
+						<div  class="content" style="float: left;">
+							
+							
+							<h1>Titanic Data Analysis</h1>
+							<p class="major"> <a href=""></a>This is a competition where we use machine learning to create a model that predicts which passengers survived the Titanic shipwreck.<a href=""></a>.</p>
+							<p>Kaggle is a wonderful platform which has helped learn machine learning models. I have implemented a few of these models in the current project where I have tried to analyse the titanic dataset and find out the number of survivors based on the various attributes given in the dataset.
+								This report contains the steps and approaches I have involved in trying to find the number of survivors from the test data set
+								</p>
+								<a href="https://github.com/neelesh609/Titanic_kaggle"> <button type="button">Python Jupyter Notebook</button></a><br/>
+								<br>
+							<ul class="actions stacked">
+								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+							</ul>
+						</div>
+						
+					</div>
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Import the Training data</h2>
+							<p>Here we import the training data values and store it n a variable , so that we can use that variable to access the data when required.</p>
+							<ul class="actions stacked">
+					
+								<img width='800px' height='400px'src="images/train_data.PNG" alt="" /> <br/><br/><br/>
+
+								<h2>Import the Test data</h2> 
+								<p>Here we import the training data values and store it n a variable , so that we can use that variable to access the data when required.</p>
+
+								<img width='800px' height='400px'src="images/test_data.PNG" alt="" />
+							</ul>
+						</div>
+</section>
+
+						<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+								<div class="content">
+								<h2>Cleaning the DATA</h2>	
+								<p>To find Null values and missing values from the training dataset</p>
+								<ul class="actions stacked">
+									<img width='1000px' height='400px' src="images/null values.PNG" alt="" /><br/><br/><br/>
+									<p>To find missing values from the Training dataset</p>
+									<img width='800px' height='400px' src="images/missing values.PNG" alt="" /><br/><br/><br/>
+									<p>To find missing values from the Test dataset</p>
+									<img width='800px' height='400px' src="images/missing value test.PNG" alt="" />
+			
+									</ul>
+							</div>
+	
+						</section>
+
+						<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+							<div class="content">
+								<h2>Survival </h2>
+								<p>When we consider the entire training data , the most importaant part is to see how many people survived the accident ,
+									Unfortunately according to the data that is provided we can draw the conclusion that the number of survivors are less 
+									than the number of deceased.
+								</p>
+								<ul class="actions stacked">
+									<img width='800px' height='400px' src="images/Capture.PNG" alt="" />
+									
+								</ul>
+							</div>
+							
+						</section>
+
+
+
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Survival according to Age</h2>
+							<p>Here i have taken age as a factor to find out what age categories survival rate is the highest.
+							 According to the data inage we can draw the conclusion that , people of age median 30 has the highest survival rate.
+							At the same time we can draw the conclusion that the people of age median 25 has the lowest survival rate.</p>
+							<ul class="actions stacked">
+								<img width='800px' height='400px' src="images/deceased 1.png" alt="" />
+								
+							</ul>
+						</div>
+						
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Visualizing training data based Class</h2>
+							<p>Class is another importatnt factor in this analysis.
+								I have taken class to be another important factor in order to analyse which class passengers have the most survival rate.
+							</p>
+							<ul class="actions stacked">
+								<img width='400px' height='=400px' src="images/no of ppl in class.png" alt="" /> <br/><br/>
+								<h3>Visualisation of Passengers class in Test Data</h3>
+								<p>We can draw a few importatnt conclusions from this graph :
+									 we see that maximum passengers are travellers in the third class
+									we see that about 30%of the travellers are from first class 
+						            also about 15% are from second class where as more than 55% of passengers belong to third class </p>
+
+								<img width='400px' height='400px' src="images/no  of ppl in class test.png" alt="" />
+
+								
+							</ul>
+						</div>
+
+					</section>
+
+				<!-- Five -->
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Visualising Age based on Class</h2>
+						<p>we can note that the third class is the most filled the median age of people on the ship is approximately 30 ie most of the people on board are approximately 30.</p>
+						<ul class="actions stacked">
+							<img width='300px' height='300px' src="images/age vis train.png" alt="" /> <br/><br/><br/>
+							<p> We can notice that even in the test data given , the third class is the most filled with people of age 25-30 and the first class contains the range of 40-60 more.
+								People of age 60-80 are the least in 3rd class.
+							</p>
+							<img width='300px' height='300px' src="images/age visualizationtest.png" alt="" />
+
+							
+						</ul>
+					</div>
+
+				</section>
+					
+							
+
+				<!-- Six -->
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Survivors by Class</h2>
+						<p>comparison in 1st class :
+							The deceased here is lesser than the number of passengers who have survived
+						   Comparison in 2nd class :
+						    The deceased here are almost equal to the number of people who have survived , just a tad bit more deceased compared to the survivors.
+						Comparison in the 3rd class :
+						     The number of passengers deceased here are way more than the number of survivors.
+						</p>
+
+					
+						<ul class="actions stacked">
+							<img width='800px' height='400px' src="images/non survivors by class.png" alt="" /> 
+							<p>
+								Even though the number of people in  3rd class are way more higher than the number of people in 1st class , The number of survivors
+								in the first class are more.<br/>
+								money does play its part.
+							</p>
+						</ul>
+					</div>
+
+				</section>
+
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Snapshots of Code</h2>
+						<p>Code to display the training data.</p>
+						<ul class="actions stacked">
+							<img width='1000px' height='400px' src="images/traininput.PNG" alt="" /> <br/><br/><br/>
+							<p>checking for the missing values.</p>
+							<img width='1000px' height='400px' src="images/missing values.PNG" alt="" /> <br/><br/><br/>
+							<p>Making Predictions.</p>
+							<img width='800px' height='400px' src="images/making predictions.PNG" alt="" /> <br/><br/><br/>
+							<p>Implementing Radom Forest Classifier.</p>
+							<img width='800px' height='400px' src="images/random forest classifier.PNG" alt="" /> <br/><br/><br/>
+							<p>Code to diplay the survivors by class.</p>
+							<img width='800px' height='400px' src="images/code.PNG" alt="" /> <br/><br/>
+
+
+							<h4>My approach involved classifying the data and finding the survivors.
+								I tried to find out important attributes which affected the survival, like age, class and Relatives
+								Relatives includes: Parch and SibSp.<br/><br/>
+								I tried to find the survivors based on age and found out the most survivors are of the age :20-30.<br/><br/>
+								I tried to find the survivors based on class and found out the most survivors were from the first class.<br/><br/>
+								I tried to incorporate Relatives to see how many members of the same family survived but was not successful, however my I shall try and learn more models of ML so that I will be able to implement them and find a better meaning from the data and classify the survivors in a more efficient way.
+								</h4>
+							
+						</ul>
+					</div>
+
+				</section>
+
+				<!-- Contact -->
+				<section id="contact" class="four" style="text-align: center;">
+					<div class="container">
+						
+						<header>
+							<h2>Contact</h2><br/>
+							
+
+						<h3></h3>
+						</header>
+						<dl class="alt">
+							<div class="container">
+
+								<p> Any Queries ? Contact me ! </p>
+								<p><strong>Email Id : </strong>Neelesh216@gmail.com</p>
+								<p><strong>Address :</strong> 404 E Border st, Arlington, Texas 76010, USA</p>
+								<p><strong>Phone :</strong> 682 375 1222</p>
+							  </div>
+
+					</div>
+				</section>
+					
+
+				<!-- Seven -->
+					
+
+				<!-- Footer -->
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
